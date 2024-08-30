@@ -92,7 +92,7 @@ const CreateCampaignModal = ({
       console.log("Deploying contract...");
       const contractAddress = await deployPublishedContract({
         client: client,
-        chain: baseSepolia,
+        chain: chain,
         account: account!,
         contractId: "Crowdfunding",
         contractParams: [
